@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3480116B21812A0B006B3507 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 3480116921812A0B006B3507 /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3480117221812A77006B3507 /* TestOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = 3480117121812A77006B3507 /* TestOverride.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3480116621812A0B006B3507 /* Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3480116921812A0B006B3507 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		3480116A21812A0B006B3507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3480117121812A77006B3507 /* TestOverride.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOverride.m; sourceTree = "<group>"; };
+		3480119621817EDC006B3507 /* TestOverride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOverride.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,8 @@
 			children = (
 				3480116921812A0B006B3507 /* Test.h */,
 				3480116A21812A0B006B3507 /* Info.plist */,
+				3480119621817EDC006B3507 /* TestOverride.h */,
+				3480117121812A77006B3507 /* TestOverride.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3480117221812A77006B3507 /* TestOverride.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
