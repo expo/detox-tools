@@ -1,18 +1,18 @@
 //
-//  TestOverride.h
-//  Test
+//  DetoxOverride.h
+//  ExpoDetoxHook
 //
 //  Created by Quinlan Jung on 10/24/18.
 //  Copyright © 2018 Quinlan Jung. All rights reserved.
 //
 
-#ifndef TestOverride_h
-#define TestOverride_h
+#ifndef DetoxOverride_h
+#define DetoxOverride_h
 #import <Foundation/Foundation.h>
 
-@interface TestOverride : NSObject
+@interface DetoxOverride : NSObject
 
 + (void)registerOneTimeNotification:(NSNotificationName) name handler:(void (^)(void))handler;
 @end
 
-#endif /* TestOverride_h */
+#endif /* DetoxOverride_h */
