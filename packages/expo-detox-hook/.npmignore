@@ -1,0 +1,21 @@
+/ios/
+ios_src
+
+# Dependency directories
+node_modules
+
+## Build generated
+ios/build/
+ios/DerivedData/
+
+##################
+# React-Native
+##################
+# OSX
+#
+.DS_Store
+
+# node.js
+#
+node_modules/
+npm-debug.log
