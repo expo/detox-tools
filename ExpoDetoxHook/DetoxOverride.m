@@ -25,7 +25,7 @@ static id call(id target, NSString * selector, NSArray *args){
     }
     
     [invocation invoke];
-    id tempResultSet;
+    id __unsafe_unretained tempResultSet;
     [invocation getReturnValue:&tempResultSet];
     return tempResultSet;
 }
