@@ -1,2 +1,4 @@
 packages/expo-detox-hook/ExpoDetoxHook-ios-src.tbz
 node_modules
+packages/expo-detox-hook/package-lock.json
+packages/expo-detox-cli/package-lock.json

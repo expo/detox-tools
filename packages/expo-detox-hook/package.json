@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quinlanj/ExpoDetoxHook.git"
+    "url": "git+https://github.com/expo/detox-tools.git"
   },
   "author": "Quinlan Jung",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/quinlanj/ExpoDetoxHook/issues"
+    "url": "https://github.com/expo/detox-tools/issues"
   },
-  "homepage": "https://github.com/quinlanj/ExpoDetoxHook#readme",
+  "homepage": "https://github.com/expo/detox-tools#readme",
   "dependencies": {
     "child-process-promise": "^2.2.1",
     "fs-extra": "^7.0.0"
