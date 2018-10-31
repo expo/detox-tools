@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 const cp = require('child_process');
 const path = require('path');
 const fs = require('fs');
@@ -14,13 +15,13 @@ function getVersion() {
 function getFrameworkPath() {
     const version = getVersion();
     let sha1 = cp.execSync(`(echo "${version}" && xcodebuild -version) | shasum | awk '{print $1}'`).toString().trim();
-    return `${OSX_LIBRARY_ROOT_PATH}/ios/${sha1}/ExpoDetoxHook.framework`;
+    return `${OSX_LIBRARY_ROOT_PATH}/ios/${sha1}/ExpoDetoxHook.framework/ExpoDetoxHook`;
 }
 
-const appPath = path.join(process.cwd(), 'node_modules/expo-detox-hook');
-const appPackageJsonPath = path.join(appPath, 'package.json');
+const detoxAppPath = path.join(process.cwd(), 'node_modules/detox');
+const detoxPackageJsonPath = path.join(detoxAppPath, 'package.json');
 
-if (fs.existsSync(appPackageJsonPath)) {
+if (fs.existsSync(detoxPackageJsonPath)) {
     // { shell: true } option seems to break quoting on windows? Otherwise this would be much simpler.
     if (process.platform === 'win32') {
         const result = cp.spawnSync(
@@ -30,6 +31,10 @@ if (fs.existsSync(appPackageJsonPath)) {
         process.exit(result.status);
     } else {
         const expoDetoxHookFrameworkPath = getFrameworkPath();
+        if (!fs.existsSync(expoDetoxHookFrameworkPath)){
+            console.log("expo-detox-hook is not installed in your osx Library. See <TODO:(quin) readme> for more info.");
+            process.exit(1);
+        }
         const result = cp.spawnSync(
         path.join(process.cwd(), 'node_modules/.bin/detox'),
         process.argv.slice(2),
@@ -39,7 +44,6 @@ if (fs.existsSync(appPackageJsonPath)) {
         process.exit(result.status);
     }
 } else {
-    console.log(appPackageJsonPath);
     console.log("detox is not installed in this directory");
     process.exit(1);
 }

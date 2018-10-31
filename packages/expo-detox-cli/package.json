@@ -1,11 +1,9 @@
 {
-  "name": "expo-detox-hook",
+  "name": "expo-detox-cli",
   "version": "1.0.2",
   "description": "",
-  "scripts": {
-    "build": "node scripts/build.js",
-    "prepublish": "npm run build",
-    "postinstall": "node scripts/postinstall.js"
+  "bin": {
+    "expotox": "./cli.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +16,6 @@
   },
   "homepage": "https://github.com/quinlanj/ExpoDetoxHook#readme",
   "dependencies": {
-    "child-process-promise": "^2.2.1",
-    "fs-extra": "^7.0.0"
+    "child-process-promise": "^2.2.1"
   }
 }
