@@ -1,6 +1,6 @@
 {
   "name": "expo-detox-hook",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "bin": {
     "expotox": "local-cli/expotox.js"
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/expo/detox-tools#readme",
   "dependencies": {
     "child-process-promise": "^2.2.1",
-    "fs-extra": "^7.0.0",
-    "commander": "^2.19.0"
+    "commander": "^2.19.0",
+    "fs-extra": "^7.0.0"
   }
 }
