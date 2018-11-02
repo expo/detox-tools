@@ -41,7 +41,7 @@ if (process.platform === 'win32') {
     const command = process.argv.slice(2)[0];
     if (command && command.startsWith('expo-')){
         const result = cp.spawnSync(
-        path.join(process.cwd(), 'node_modules/.bin/expotox'),
+        path.join(process.cwd(), 'node_modules/.bin/expo-hook'),
         process.argv.slice(2),
         { stdio: 'inherit' });
         process.exit(result.status);

@@ -3,7 +3,7 @@
   "version": "1.0.7",
   "description": "",
   "bin": {
-    "expotox": "local-cli/expotox.js"
+    "expo-hook": "local-cli/expo-hook.js"
   },
   "scripts": {
     "build": "node scripts/build.js",
