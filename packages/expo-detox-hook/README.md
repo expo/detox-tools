@@ -5,4 +5,4 @@ The `expo-detox-hook` is an iOS framework that you install via npm, and it gets 
 You can install the framework by declaring `expo-detox-hook` in your `package.json` and running `npm install`, which should install the framework to your Library directory.
 
 # Usage
-Download `expo-detox-cli` and when you run `expotox`, it should let the test harness know about the `expo-detox-hook` frameworks.
+Unless you get an error, you shouldn't need to do anything else here.
