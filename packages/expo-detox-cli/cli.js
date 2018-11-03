@@ -6,5 +6,5 @@ const result = cp.spawnSync(
     path.join(process.cwd(), 'node_modules/.bin/expotox'),
     process.argv.slice(2),
     { stdio: 'inherit' });
-    process.exit(result.status);
-}
+    
+process.exit(result.status);
